@@ -1,0 +1,325 @@
+<html>
+<head>
+<style>
+ .cid-sxbpJ2am2Z {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url("../../../assets/images/background2.jpg");
+  }
+  .cid-sxbpJ2am2Z .mbr-text {
+    margin: 0;
+  }
+  .cid-sxbpJ2am2Z .card {
+    padding: 32px 35px 40px;
+    border-radius: 0;
+    background-color: #ffffff;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    display: flex;
+  }
+  .cid-sxbpJ2am2Z .row-element,
+  .cid-sxbpJ2am2Z .image-element {
+    padding: 0;
+  }
+  .cid-sxbpJ2am2Z .image-element {
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-sxbpJ2am2Z .image-element .img-wrap {
+    width: 50%;
+  }
+  .cid-sxbpJ2am2Z .image-element .img-wrap img {
+    width: 50%;
+    min-height: 100px;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .cid-sxbpJ2am2Z .carousel-item {
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .cid-sxbpJ2am2Z .carousel-item.active,
+  .cid-sxbpJ2am2Z .carousel-item-next,
+  .cid-sxbpJ2am2Z .carousel-item-prev {
+    display: flex;
+  }
+  .cid-sxbpJ2am2Z .carousel-indicators {
+    margin: 20px auto 0;
+    align-items: center;
+    bottom: -70px;
+    margin-bottom: 1.5rem !important;
+  }
+  .cid-sxbpJ2am2Z .carousel-indicators .active {
+    opacity: 1;
+    border: 0;
+    background-color: #0c5b47;
+  }
+  .cid-sxbpJ2am2Z .carousel-indicators li {
+    height: 9px;
+    width: 9px;
+    margin: 6px;
+    border-radius: 50%;
+    transition: opacity .5s;
+    background-color: #698e5e;
+    font-size: 2rem;
+    opacity: .5;
+    border-width: 0px;
+  }
+  .cid-sxbpJ2am2Z .carousel-indicators li:hover {
+    opacity: 1;
+  }
+  .cid-sxbpJ2am2Z .text-center {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 600px) {
+    .cid-sxbpJ2am2Z .col-12 {
+      padding-top: 25px;
+    }
+    .cid-sxbpJ2am2Z .col-12:first-child {
+      padding-top: 0px;
+    }
+  }
+  .cid-sxbpJ2am2Z .desc1 {
+    padding-bottom: 4px;
+    width: 100%;
+    text-align: left;
+    color: #1b745e;
+  }
+  .cid-sxbpJ2am2Z .desc2 {
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: left;
+    color: #0c5b47;
+  }
+  .cid-sxbpJ2am2Z .desc3 {
+    width: 100%;
+    text-align: left;
+    color: #1b745e;
+  }
+  .cid-sxbpJ2am2Z .mbr-section-title {
+    color: #0c5b47;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .cid-sxbpJ2am2Z .mbr-section-subtitle {
+    color: #1b745e;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 12px;
+  }
+  .cid-sxbpJ2am2Z a {
+    font-style: italic;
+  }
+  
+  
+</style>
+
+</head>
+<script>
+    function setActiveCarouselItem(card){
+   var $target = $(card).find('.carousel-item:first');
+   $target.addClass('active');
+} 
+function initTestimonialsCarousel(card){
+    var $target = $(card),
+        $carouselID = $target.attr('ID') +"-carousel"; 
+
+    $target.find('.carousel').attr('id',$carouselID);
+    $target.find('.carousel-controls a').attr('href','#'+$carouselID);
+    $target.find('.carousel-indicators li').attr('data-target','#'+$carouselID);
+    setActiveCarouselItem($target);  
+}
+
+// Mobirise initialization
+var isBuilder = $('html').hasClass('is-builder');
+if (isBuilder) {
+    $(document).on('add.cards', function(event) {
+        if($(event.target).hasClass('testimonials-slider')){
+            initTestimonialsCarousel(event.target);
+        }
+
+    }).on('changeParameter.cards', function(event, paramName, value) {
+        if (paramName === 'testimonialsSlides') {
+            if ($(event.target).find('.carousel-item.active').length==0) {
+                setActiveCarouselItem(event.target);
+            }
+        }
+    });;
+} else{
+    if(typeof window.initTestimonialsPlugin === 'undefined'){
+        window.initTestimonialsPlugin = true;
+        $('.testimonials-slider').each(function(){
+            initTestimonialsCarousel(this);
+        });      
+    }
+}
+</script>
+
+<body>
+
+    <section class="carousel slide testimonials-slider extSlider slider1 cid-sxbpJ2am2Z" data-interval="false"
+    id="slider1-h">
+    <div class="container text-center">
+        <h3 class="mbr-section-subtitle mbr-fonts-style display-5">
+            Services</h3>
+        <h3 class="mbr-section-title mbr-fonts-style display-1">We offer a variety of floral services, from unique
+            bouquets to event decoration.</h3>
+            <div class="carousel slide" role="listbox" data-pause="true" data-keyboard="false" data-ride="carousel"data-interval="0000" id="slider1-h-carousel">
+       
+            
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-sm-4 features-image">
+                            <div class="item-wrapper">
+                                <div class="item-img">
+                                    <img src="C:\Users\Jigyasa Yadav\Desktop\flower\service.1.jpg" alt="">
+                                </div>
+                                <div class="center">
+                                    <div class="card">
+
+                                        <p class="mbr-text desc2 bord mbr-fonts-style display-5">
+                                            Decoration</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 features-image">
+                            <div class="item-wrapper">
+                                <div class="item-img">
+                                    <img src="C:\Users\Jigyasa Yadav\Desktop\flower\services.2.jpg" alt="">
+                                </div>
+                                <div class="center">
+                                    <div class="card">
+
+                                        <p class="mbr-text desc2 bord mbr-fonts-style display-5">
+                                            Floral Design</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 features-image">
+                            <div class="item-wrapper">
+                                <div class="item-img">
+                                    <img src="C:\Users\Jigyasa Yadav\Desktop\flower\services.3.jpg" alt="">
+                                </div>
+                                <div class="center">
+                                    <div class="card">
+
+                                        <p class="mbr-text desc2 bord mbr-fonts-style display-5">
+                                            Events</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-12 col-sm-4 features-image">
+                            <div class="item-wrapper">
+                                <div class="item-img">
+                                    <img src="C:\Users\Jigyasa Yadav\Desktop\flower\service.1.jpg" alt="">
+                                </div>
+                                <div class="center">
+                                    <div class="card">
+
+                                        <p class="mbr-text desc2 bord mbr-fonts-style display-5">
+                                            Decoration</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 features-image">
+                            <div class="item-wrapper">
+                                <div class="item-img">
+                                    <img src="C:\Users\Jigyasa Yadav\Desktop\flower\services.2.jpg" alt="">
+                                </div>
+                                <div class="center">
+                                    <div class="card">
+
+                                        <p class="mbr-text desc2 bord mbr-fonts-style display-5">
+                                            Floral Design</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 features-image">
+                            <div class="item-wrapper">
+                                <div class="item-img">
+                                    <img src="C:\Users\Jigyasa Yadav\Desktop\flower\services.3.jpg" alt="">
+                                </div>
+                                <div class="center">
+                                    <div class="card">
+
+                                        <p class="mbr-text desc2 bord mbr-fonts-style display-5">
+                                            Events</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-12 col-sm-4 features-image">
+                            <div class="item-wrapper">
+                                <div class="item-img">
+                                    <img src="C:\Users\Jigyasa Yadav\Desktop\flower\service.1.jpg" alt="">
+                                </div>
+                                <div class="center">
+                                    <div class="card">
+
+                                        <p class="mbr-text desc2 bord mbr-fonts-style display-5">
+                                            Decoration</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 features-image">
+                            <div class="item-wrapper">
+                                <div class="item-img">
+                                    <img src="C:\Users\Jigyasa Yadav\Desktop\flower\services.2.jpg" alt="">
+                                </div>
+                                <div class="center">
+                                    <div class="card">
+
+                                        <p class="mbr-text desc2 bord mbr-fonts-style display-5">
+                                            Floral Design</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 features-image">
+                            <div class="item-wrapper">
+                                <div class="item-img">
+                                    <img src="C:\Users\Jigyasa Yadav\Desktop\flower\services.3.jpg" alt="">
+                                </div>
+                                <div class="center">
+                                    <div class="card">
+
+                                        <p class="mbr-text desc2 bord mbr-fonts-style display-5">
+                                            Events</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+</section>
+</body>
+</html>
